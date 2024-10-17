@@ -1,0 +1,26 @@
+package com.example.controllerTest;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.example.controller.MessageController;
+import com.example.service.MessageService;
+
+@WebMvcTest(controllers=MessageController.class)
+public class MessageRestControllerTest {
+	@MockBean
+	private MessageService msgservice;
+	@Autowired
+	//it is used to send request to our REST API
+	private MockMvc mockmvc;
+	@Test
+	public void GreetTest() {
+		//define mock object behaviour 
+		when(msgservice.getGreetMessage()).thenReturn("Dummy Text");
+		
+	}
+
+}

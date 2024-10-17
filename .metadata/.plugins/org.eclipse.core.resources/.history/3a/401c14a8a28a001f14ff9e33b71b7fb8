@@ -1,0 +1,11 @@
+package com.example.beans;
+
+public class CalculatorTest {
+	
+	public  void addTest() {
+		Calculator c=new Calculator ();
+		int actualresult=c.add(10, 20);
+		int expectedresult=30;
+	}
+
+}

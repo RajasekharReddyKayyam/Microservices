@@ -1,0 +1,10 @@
+package com.example.controllerTest;
+
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+
+import com.example.controller.MessageController;
+
+@WebMvcTest(controllers=MessageController.class)
+public class MessageRestControllerTest {
+
+}

@@ -1,0 +1,8 @@
+spring.application.name=Register_Login_App
+spring.datasource.username=root
+spring.datasource.password=Raj@123
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:Microservices
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver

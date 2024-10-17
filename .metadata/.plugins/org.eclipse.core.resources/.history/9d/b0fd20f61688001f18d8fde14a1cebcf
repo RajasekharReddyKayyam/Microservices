@@ -1,0 +1,10 @@
+spring.application.name=Register_Login_App
+
+# MongoDB properties
+spring.data.mongodb.uri=mongodb://localhost:27018/Microservices
+
+# Optional: Set the database name
+# spring.data.mongodb.database=Register_Login_App
+
+# Optional: Enable MongoDB logging
+logging.level.org.springframework.data.mongodb=DEBUG

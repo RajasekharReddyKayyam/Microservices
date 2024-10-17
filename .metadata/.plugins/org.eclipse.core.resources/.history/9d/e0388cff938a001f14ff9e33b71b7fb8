@@ -1,0 +1,24 @@
+package com.example.service;
+
+import static org.mockito.Mockito.when;
+
+import org.mockito.InjectMocks;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+
+import com.example.dao.DemoDAO;
+
+@SpringBootTest
+public class DemoServiceTest {
+	@MockBean
+	private DemoDAO dao;
+	@InjectMocks
+	private DemoService Ds;
+	
+	public String GetUsernameTest() {
+		when(dao.findbyName(100)).thenReturn("Raj");
+		String Uname=Ds.GetUserName(101);
+		
+	}
+
+}
